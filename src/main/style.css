@@ -2,26 +2,26 @@
 /* ================= */
 
 :host {
-  --tabgroup-background: #000;
+  --tabgroup-background: #E7EAED;
   --tab-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --tab-font-size: 13px;
-  --tab-background: #000;
-  --tab-color: #000;
-  --tab-border-color: #040404;
+  --tab-background: #E7EAED;
+  --tab-color: #696A6C;
+  --tab-border-color: #DADCE0;
   --tab-transition: background-color 200ms ease-out, color 200ms ease-out;
   --tab-cursor: pointer;
-  --tab-active-color: #000;
-  --tab-active-background: #000;
+  --tab-active-color: currentcolor;
+  --tab-active-background: #FFF;
   --tag-hover-color: currentcolor;
-  --tag-hover-background: #333;
+  --tag-hover-background: #F1F3F4;
   --button-font-size: 15px;
   --button-background: none;
-  --button-color: #040404;
-  --button-hover-background: #030303;
-  --button-hover-color: #030303;
+  --button-color: #696A6C;
+  --button-hover-background: #DADCE0;
+  --button-hover-color: #383a3e;
   --button-border-radius: 50%;
   --button-cursor: pointer;
-  --badge-background: red;
+  --badge-background: #383a3e;
   --badge-color: #fff;
   --close-button-visibility: visible;
 }
