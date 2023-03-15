@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <link href="favicon.ico" rel="icon"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="#ffffff" name="theme-color"/>
+    <meta content="dark" name="color-scheme">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link href="logo192.png" rel="apple-touch-icon"/>
+    <link href="manifest.json" rel="manifest"/>
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <title>Editor</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<tab-group new-tab-button="true" sortable="true"></tab-group>
+<script src="electron-tabs.js"></script>
+<script>
+  let loc = window.location.pathname;
+  let dir = loc.substring(0, loc.lastIndexOf('/'));
+  const page_path = "file://" + dir + '/test.html';
+  const tabGroup = document.querySelector("tab-group");
+
+  tabGroup.setDefaultTab({
+    title: "home",
+    src: page_path,
+    active: true,
+    webviewAttributes: {
+      nodeIntegration: true,
+    }
+  });
+
+</script>
+</body>
+</html>
